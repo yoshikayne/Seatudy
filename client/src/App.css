@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  margin-bottom: 25px;
+}
+
+.App {
+  height: 100vh;
+  padding: 0px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.829);
+  color: white;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 10px 20px;
+  margin: auto;
+  color: white;
+}
+
+.form {
+  background: rgb(70, 60, 60);
+  padding: 20px 30px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.form h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: rgb(88, 101, 242);;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.pw-wrap {
+  position: relative;
+}
+
+#eyeicon,
+#eyeicon2 {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 1.5rem;
+  align-items: center;
+}
+
+.form-group img {
+  width: 20px;
+  cursor: pointer;
+  position: absolute;
+}
+
+.form-group label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+  color: rgb(88, 101, 242);
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  background: transparent !important;
+  color: rgb(88, 101, 242);
+  border: 1px solid rgb(88, 101, 242);
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s, background 0.3s, color 0.3s;
+}
+
+.form-group input:focus {
+  border-color: rgb(238, 234, 222);
+  color: rgb(224, 220, 207);
+}
+
+.form-group input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background: rgb(88, 101, 242);
+  color: #fff;
+  border: 2px solid rgb(88, 101, 242);
+  cursor: pointer;
+  transition: background 0.3s, border-color 0.3s, transform 0.2s;
+  font-weight: bold;
+}
+
+.button:hover {
+  background: rgb(88, 101, 242);
+  border-color: rgb(88, 101, 242);
+  transform: scale(1.03);
+}
+
+.dashboard-container {
+  padding-top: 60px;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #333;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar .logo a {
+  color: rgb(88, 101, 242);
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 0;
+}
+
+.navbar .nav-links li a {
+  color: rgb(88, 101, 242);
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.navbar .nav-links li a:hover {
+  color: white;
+}
+
+.navbar .nav-links li button {
+  background: transparent;
+  border: none;
+  color: rgb(88, 101, 242);
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.navbar .nav-links li button:hover {
+  color: white;
+}
+
+.navbar .nav-links li .logged-in button:hover {
+  color: rgb(255, 0, 0);
+}
+
+.courses {
+  display: flex;
+  gap: 15px;
+}
+
+.course {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.add-course-btn {
+  border: none;
+  padding: 3px 6px;
+  background-color: rgba(255, 255, 255, 0.85);
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.add-course-btn:hover {
+  background-color: rgb(88, 101, 242);
+  color: white;
+}
+
+.del-course-btn {
+  border: none;
+  padding: 3px 6px;
+  background-color: rgba(255, 255, 255, 0.85);
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.del-course-btn:hover {
+  background-color: #ff0000;
+  color: white;
+}
+
+.course img {
+  width: 200px;
+  height: 300px;
+  border-radius: 3px;
+  object-fit: cover;
+  background-color: rgb(88, 101, 242);
+}
